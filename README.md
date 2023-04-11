@@ -8,14 +8,14 @@ git clone --recurse-submodules https://github.com/robbert1978/windows-pwn window
 Update pwn++ lib
 
 ```cmd
-cd windows-pwn
-mkdir deps
-git submodule add 'https://github.com/hugsy/pwn--' deps/pwn++
+# cd windows-pwn
+# mkdir deps
+# git submodule add 'https://github.com/hugsy/pwn--' deps/pwn++
 git submodule update --init --recursive
 ```
 Use my VS solution in `build` or if you want create your own VS solution
 
-open `windows-pwn` in Visual Studio code, open the terminal, run: 
+open `windows-pwn` in Visual Studio code then open the terminal and run: 
 
 ```cmd
 cmd /c "rmdir /s source"
