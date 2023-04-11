@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeASMCompiler.cmake.in
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeASMInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeASM_MASMInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeDetermineASMCompiler.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeDetermineASM_MASMCompiler.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeTestASMCompiler.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeTestASM_MASMCompiler.cmake
+C:/Users/ngovi/Desktop/windows-pwn/build/CMakeFiles/3.25.1-msvc1/CMakeASM_MASMCompiler.cmake
+C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/pwn++/win32/CMakeLists.txt

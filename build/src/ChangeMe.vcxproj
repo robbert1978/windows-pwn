@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0FF222A-7F4B-3719-AC94-9358A8C92654}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ChangeMe</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ChangeMe.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ChangeMe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ChangeMe.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ChangeMe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ChangeMe.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ChangeMe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ChangeMe.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ChangeMe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\pwn++\src\pwn++\Debug\pwn++.lib;..\lib\pwn++\deps\zydis\Debug\Zydis.lib;..\lib\pwn++\deps\arch-arm64\disassembler\Debug\disass_arch_arm64.lib;ntdll.lib;ws2_32.lib;Userenv.lib;Rpcrt4.lib;BCrypt.lib;..\lib\pwn++\deps\zydis\zycore\Debug\Zycore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /InferAsanLibs /SUBSYSTEM:Console</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ngovi/Desktop/windows-pwn/build/src/Debug/ChangeMe.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ngovi/Desktop/windows-pwn/build/src/Debug/ChangeMe.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\pwn++\src\pwn++\Release\pwn++.lib;..\lib\pwn++\deps\zydis\Release\Zydis.lib;..\lib\pwn++\deps\arch-arm64\disassembler\Release\disass_arch_arm64.lib;ntdll.lib;ws2_32.lib;Userenv.lib;Rpcrt4.lib;BCrypt.lib;..\lib\pwn++\deps\zydis\zycore\Release\Zycore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SUBSYSTEM:Console</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ngovi/Desktop/windows-pwn/build/src/Release/ChangeMe.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ngovi/Desktop/windows-pwn/build/src/Release/ChangeMe.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\pwn++\src\pwn++\MinSizeRel\pwn++.lib;..\lib\pwn++\deps\zydis\MinSizeRel\Zydis.lib;..\lib\pwn++\deps\arch-arm64\disassembler\MinSizeRel\disass_arch_arm64.lib;ntdll.lib;ws2_32.lib;Userenv.lib;Rpcrt4.lib;BCrypt.lib;..\lib\pwn++\deps\zydis\zycore\MinSizeRel\Zycore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SUBSYSTEM:Console</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ngovi/Desktop/windows-pwn/build/src/MinSizeRel/ChangeMe.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ngovi/Desktop/windows-pwn/build/src/MinSizeRel/ChangeMe.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PHNT_VERSION=PHNT_20H2;_UNICODE;UNICODE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\include;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\arch-arm64\disassembler;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\phnt;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis;C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\deps\zydis\dependencies\zycore\include;C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\pwn++\src\pwn++\RelWithDebInfo\pwn++.lib;..\lib\pwn++\deps\zydis\RelWithDebInfo\Zydis.lib;..\lib\pwn++\deps\arch-arm64\disassembler\RelWithDebInfo\disass_arch_arm64.lib;ntdll.lib;ws2_32.lib;Userenv.lib;Rpcrt4.lib;BCrypt.lib;..\lib\pwn++\deps\zydis\zycore\RelWithDebInfo\Zycore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SUBSYSTEM:Console</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ngovi/Desktop/windows-pwn/build/src/RelWithDebInfo/ChangeMe.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ngovi/Desktop/windows-pwn/build/src/RelWithDebInfo/ChangeMe.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngovi\Desktop\windows-pwn\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ngovi/Desktop/windows-pwn/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ngovi/Desktop/windows-pwn -BC:/Users/ngovi/Desktop/windows-pwn/build --check-stamp-file C:/Users/ngovi/Desktop/windows-pwn/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ngovi/Desktop/windows-pwn/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ngovi/Desktop/windows-pwn -BC:/Users/ngovi/Desktop/windows-pwn/build --check-stamp-file C:/Users/ngovi/Desktop/windows-pwn/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ngovi/Desktop/windows-pwn/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ngovi/Desktop/windows-pwn -BC:/Users/ngovi/Desktop/windows-pwn/build --check-stamp-file C:/Users/ngovi/Desktop/windows-pwn/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ngovi/Desktop/windows-pwn/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ngovi/Desktop/windows-pwn -BC:/Users/ngovi/Desktop/windows-pwn/build --check-stamp-file C:/Users/ngovi/Desktop/windows-pwn/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ngovi\Desktop\windows-pwn\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ngovi\Desktop\windows-pwn\src\main.cpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\pwn_export.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\architecture.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\common.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\constants.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\crypto.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\disasm.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\log.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\handle.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\tube.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\utils.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\error.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\memory.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\pwn.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\framework.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\alpc.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\fs.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\job.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\kernel.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\object.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\process.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\registry.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\rpc.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\service.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\symbols.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\system.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\thread.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\token.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\ctf\remote.hpp" />
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\ctf\process.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ngovi\Desktop\windows-pwn\build\ZERO_CHECK.vcxproj">
+      <Project>{8625C297-1D10-3727-BCA4-331210EC602B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\zycore\Zycore.vcxproj">
+      <Project>{DC0362CC-E257-3EF2-885D-F431D517792B}</Project>
+      <Name>Zycore</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\zydis\Zydis.vcxproj">
+      <Project>{56682283-4374-353A-B28E-34D4853A7564}</Project>
+      <Name>Zydis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\deps\arch-arm64\disassembler\disass_arch_arm64.vcxproj">
+      <Project>{020BF589-D3A6-3C58-B673-63DFA6DBDC96}</Project>
+      <Name>disass_arch_arm64</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngovi\Desktop\windows-pwn\build\lib\pwn++\src\pwn++\pwn++.vcxproj">
+      <Project>{0B172423-1A59-3E24-82C7-12DB49A06C19}</Project>
+      <Name>pwn++</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

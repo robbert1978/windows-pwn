@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ngovi\Desktop\windows-pwn\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\pwn_export.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\architecture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\constants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\crypto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\disasm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\handle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\tube.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\error.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\pwn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\framework.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\alpc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\fs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\job.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\kernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\process.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\registry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\rpc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\service.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\symbols.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\system.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\token.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\ctf\remote.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngovi\Desktop\windows-pwn\lib\pwn++\src\inc\win32\ctf\process.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngovi\Desktop\windows-pwn\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6B44FECB-0C39-3A2E-B9B8-AC94B9A42C4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6A9781CC-8354-309F-B5C0-C50D9413FDF0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

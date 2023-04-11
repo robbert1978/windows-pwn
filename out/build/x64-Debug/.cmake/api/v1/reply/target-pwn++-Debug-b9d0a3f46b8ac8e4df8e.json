@@ -1,0 +1,794 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		],
+		"lto" : true
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/pwn++/src/pwn++/pwn++.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_compile_options",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_precompile_headers",
+			"target_compile_features",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"lib/pwn++/src/pwn++/CMakeLists.txt",
+			"lib/pwn++/src/pwn++/win32/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 174,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 102,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 163,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 149,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 81,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /GL"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/fsanitize=address"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/diagnostics:caret"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zl"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/ZH:SHA_256"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/sdl"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/WX"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Gy"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Gm-"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/permissive-"
+				},
+				{
+					"fragment" : "-std:c++20"
+				},
+				{
+					"fragment" : "/YcC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.hxx /FpC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/./cmake_pch.cxx.pch /FIC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "PHNT_VERSION=PHNT_20H2"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DISABLE_STRING_ANNOTATION"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DISABLE_VECTOR_ANNOTATION"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc/win32"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/deps/phnt"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					12
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 11,
+					"header" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc/pch.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /GL"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/fsanitize=address"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/diagnostics:caret"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Zl"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/ZH:SHA_256"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/sdl"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/WX"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Gy"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/Gm-"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/permissive-"
+				},
+				{
+					"fragment" : "-std:c++20"
+				},
+				{
+					"fragment" : "/YuC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.hxx /FpC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/./cmake_pch.cxx.pch /FIC:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "PHNT_VERSION=PHNT_20H2"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DISABLE_STRING_ANNOTATION"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DISABLE_VECTOR_ANNOTATION"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc/win32"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/deps/phnt"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					12
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 11,
+					"header" : "C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc/pch.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53
+			]
+		}
+	],
+	"id" : "pwn++::@467188a307d4727dbef2",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/ngovi/Desktop/windows-pwn/out/install/x64-Debug"
+		}
+	},
+	"name" : "pwn++",
+	"nameOnDisk" : "pwn++.lib",
+	"paths" : 
+	{
+		"build" : "lib/pwn++/src/pwn++",
+		"source" : "lib/pwn++/src/pwn++"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				54
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/pwn_export.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/architecture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/common.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/constants.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/crypto.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/disasm.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/log.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/handle.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/tube.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/utils.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/error.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/memory.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"path" : "lib/pwn++/src/inc/pwn.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/architecture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/crypto.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/error.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/disasm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/pwn.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/tube.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/memory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/framework.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/alpc.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/fs.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/job.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/kernel.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/object.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/process.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/registry.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/rpc.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/service.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/symbols.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/system.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/thread.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/token.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/ctf/remote.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"path" : "lib/pwn++/src/inc/win32/ctf/process.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/alpc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/fs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/job.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/kernel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/object.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/process.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/registry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/rpc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/service.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/symbols.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/thread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/token.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/ctf/remote.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 1,
+			"path" : "lib/pwn++/src/pwn++/win32/ctf/process.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "out/build/x64-Debug/lib/pwn++/src/pwn++/CMakeFiles/pwn++.dir/cmake_pch.hxx",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

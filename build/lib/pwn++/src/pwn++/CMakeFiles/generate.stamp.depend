@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/FindGit.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/GenerateExportHeader.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/exportheader.cmake.in
+C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/inc/constants.hpp.in
+C:/Users/ngovi/Desktop/windows-pwn/lib/pwn++/src/pwn++/CMakeLists.txt

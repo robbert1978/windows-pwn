@@ -1,0 +1,74 @@
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/Users/ngovi/Desktop/windows-pwn/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q2ycmx
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d1cc5 && [1/2] Building CXX object CMakeFiles\cmTC_d1cc5.dir\src.cxx.obj
+FAILED: CMakeFiles/cmTC_d1cc5.dir/src.cxx.obj 
+C:\PROGRA~1\MICROS~4\2022\Enterprise\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\cl.exe  /nologo /TP -DCOMPILER_HAS_DEPRECATED_ATTR  /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd -std:c++20 /showIncludes /FoCMakeFiles\cmTC_d1cc5.dir\src.cxx.obj /FdCMakeFiles\cmTC_d1cc5.dir\ /FS -c C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(1): error C2065: '__deprecated__': undeclared identifier
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(1): error C2062: type 'int' unexpected
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(1): error C2143: syntax error: missing ';' before '{'
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\ngovi\Desktop\windows-pwn\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-q2ycmx\src.cxx(2): error C3861: 'somefunc': identifier not found
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Checking whether the ASM_MASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Clang using "--version" did not match "(clang version)":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is ARMClang using "--version" did not match "armclang":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is HP using "-V" did not match "HP C":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Intel using "--version" did not match "(ICC)":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is SunPro using "-V" did not match "Sun C":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is XL using "-qversion" did not match "XL C":
+Microsoft (R) Macro Assembler (x64) Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -qversion
+MASM : fatal error A1017:missing source filename
