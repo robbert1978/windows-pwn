@@ -13,9 +13,9 @@ Update pwn++ lib
 # git submodule add 'https://github.com/hugsy/pwn--' deps/pwn++
 git submodule update --init --recursive
 ```
-Use my VS solution in `build` or if you want create your own VS solution
 
-open `windows-pwn` in Visual Studio code then open the terminal and run: 
+
+Open `windows-pwn` in Visual Studio code then open the terminal and run: 
 
 ```cmd
 cmd /c "rmdir /s source"
