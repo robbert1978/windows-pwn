@@ -15,7 +15,7 @@ git submodule update --init --recursive
 ```
 
 
-Open `windows-pwn` in Visual Studio code then open the terminal and run: 
+Open `windows-pwn` in Visual Studio then open the terminal and run: 
 
 ```cmd
 cmd /c "rmdir /s source"
