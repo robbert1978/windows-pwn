@@ -18,7 +18,7 @@ git submodule update --init --recursive
 Open `windows-pwn` in Visual Studio then open the terminal and run: 
 
 ```cmd
-cmd /c "rmdir /s source"
+cmd /c "rmdir /s build"
 
 cmake -S . -B ./build -A x64 -DPWN_BUILD_DOCS=OFF -DPWN_DISASSEMBLE_X86=ON -DPWN_DISASSEMBLE_ARM64=ON -DPWN_BUILD_TOOLKIT=OFF -DPWN_BUILD_TESTING=OFF -DPWN_ENABLE_LUA_BACKDOOR=OFF -DPWN_LOG_USE_COLOR=ON
 
